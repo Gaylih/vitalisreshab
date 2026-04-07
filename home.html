@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitalis ResHab | Residential Habilitation Services</title>
+    <style>
+        :root {
+            --primary-color: #2b6cb0; /* Calming Blue */
+            --secondary-color: #48bb78; /* Growth Green */
+            --bg-light: #f7fafc;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2c5282;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(43, 108, 176, 0.9), rgba(72, 187, 120, 0.8)), url('https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            color: var(--white);
+            text-align: center;
+            padding: 6rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.25rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 4px solid var(--secondary-color);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        /* About / Compliance Section */
+        .about-flex {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .about-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-content ul {
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+            color: var(--text-light);
+        }
+
+        .about-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--text-dark);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 5%;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+            color: #cbd5e0;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* In a real app, you'd add a hamburger menu here */
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="logo">Vitalis <span>ResHab</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#careers">Careers</a></li>
+            </ul>
+            <a href="#contact" class="btn">Contact Us</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Empowering Independence, Enriching Lives</h1>
+        <p>A certified Residential Habilitation Agency providing integrated, tailored services and supports to help participants live successfully in their own homes and communities.</p>
+        <a href="#services" class="btn" style="background-color: var(--secondary-color); font-size: 1.1rem; padding: 0.75rem 1.5rem;">Explore Our Services</a>
+    </section>
+
+    <section id="services">
+        <h2>Our Core Services</h2>
+        <div class="services-grid">
+            <div class="card">
+                <h3>In-Home Support</h3>
+                <p>Tailored assistance designed to help eligible participants live successfully and safely in their own homes, promoting self-reliance and daily living skills.</p>
+            </div>
+            <div class="card">
+                <h3>Family & Alternate Home Care</h3>
+                <p>Comprehensive support for participants living with their families or in an alternate family home, ensuring a supportive and integrated living environment.</p>
+            </div>
+            <div class="card">
+                <h3>Community Integration</h3>
+                <p>We provide the tools and guidance necessary for meaningful participation in the community, enhancing social skills and overall quality of life.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" style="background-color: var(--white);">
+        <div class="about-flex">
+            <div class="about-content">
+                <h2>Certified Excellence in Care</h2>
+                <p>At Vitalis Residential Habilitation, we are fully committed to meeting and exceeding state standards. As an approved Medicaid provider certified by the Department of Health and Welfare (DHW), our policies, procedures, and quality assurance programs are built to guarantee the highest level of care.</p>
+                <br>
+                <p><strong>Our Commitment to Safety and Quality:</strong></p>
+                <ul>
+                    <li>Fully certified through the DDA-RH compliance process.</li>
+                    <li>Strict adherence to IDAPA 16.04.17 health and safety regulations.</li>
+                    <li>Comprehensive Quality Assurance program for ongoing excellence.</li>
+                    <li>Participant-centered record management and privacy protocols.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="careers">
+        <div class="about-flex" style="flex-direction: row-reverse;">
+            <div class="about-content">
+                <h2>Join the Vitalis Team</h2>
+                <p>We are always looking for compassionate, dedicated professionals to join our agency. Because the safety and well-being of our participants is our top priority, we maintain rigorous hiring standards.</p>
+                <br>
+                <ul>
+                    <li><strong>Rigorous Screening:</strong> All employees must pass a comprehensive criminal history clearance through the DHW Background Check Unit.</li>
+                    <li><strong>Qualified Professionals:</strong> We employ Qualified Intellectual Disabilities Professionals (QIDPs) and expertly trained direct service staff.</li>
+                    <li><strong>Continuous Training:</strong> We maintain strict employee files and administrative support to ensure our team is always equipped to provide the best care.</li>
+                </ul>
+                <br>
+                <a href="#contact" class="btn">Apply Today</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p><strong>Vitalis Residential Habilitation</strong></p>
+        <p>Providing integrated, tailored services to help you live successfully.</p>
+        <p>Email: info@vitalisreshab.com | Phone: (555) 123-4567</p>
+        <p style="margin-top: 1rem; font-size: 0.85rem; color: #a0aec0;">&copy; 2026 Vitalis ResHab. All rights reserved. Certified DHW Medicaid Provider.</p>
+    </footer>
+
+</body>
+</html>
